@@ -1,0 +1,310 @@
+/* Estilo geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+header {
+    background: var(--deep-green);
+    color: var(--light-cream);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+nav a:hover {
+    color: black;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#back-to-top:hover {
+    background-color: #333;
+}
+
+/* Estilo para a seção da galeria */
+section {
+    background-color: #ffffff;  
+}
+
+section#galeria {
+    padding: 0px;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.photo-gallery {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.photo-item {
+    flex: 1 0 100%;
+    max-width: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.photo-navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.photo-navigation button {
+    background-color: var(--deep-green);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.photo-navigation button:hover {
+    background-color: #e8491d;
+}
+
+/* Estilo para a seção de preços */
+
+main {
+    padding: 0px;
+}
+
+.branco {
+    background-color: white;
+}
+.cinza {
+    background-color: #f3f3f3;
+}
+.preço {
+    background-color: rgb(218, 248, 218);
+}
+#prices {
+    background: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#prices h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.pricing-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.pricing-table thead th {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.pricing-table tbody td {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    font-size: 1em;
+    text-align: center;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.conditions {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #333;
+    text-align: left;
+    padding: 0 20px;
+}
+
+section#contactos {
+    padding: 20px 0;
+}
+
+section#contactos .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section#contactos h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section#contactos p, section#contactos a {
+    font-size: 1em;
+    color: #333;
+}
+
+section#contactos .social-media a {
+    
+    text-decoration: none;
+    color: var(--deep-green);
+    font-size: 1em;
+}
+
+section#contactos .social-media a:hover {
+    color: #e8491d;
+}
+
+/* Estilo para o footer */
+footer {
+    background: #231610;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: ;
+}
+
+footer .footer-links {
+    margin-bottom: 10px;
+    
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    
+}
+
+footer a:hover {
+    color: #e8491d;
+    
+}
+
+footer h3 {
+    margin-top: 0;
+    
+}
+
+footer .footer-contact a {
+    display: block;
+    margin: 5px 0;
+    font-size: 0.8em;
+}
+
+footer .footer-contact a i {
+    margin-right: 5px;
+    
+}
+
+#titulo{
+    font-size: 1.3em;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .photo-gallery {
+        display: block;
+    }
+
+    .photo-item {
+        display: block;
+        text-align: center;
+    }
+
+    .conditions {
+        text-align: center;
+        padding: 0;
+    }
+
+    .pricing-table {
+        width: 100%;
+        margin: 20px 0;
+        border-collapse: collapse;
+    }
+
+    .pricing-table thead th,
+    .pricing-table tbody td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+    }
+
+    footer .footer-links, footer .footer-contact {
+        text-align: center;
+    }
+}
+

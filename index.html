@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casinha da Glória</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header id="home">
+        <div class="container">
+            <h1>Casinha da Glória</h1>
+            <p>Sinta-se em casa e deixe-se levar pela paz e pelo sossego do campo.</p>
+            <nav>
+                <a href="#prices">Preços</a>
+                <a href="#contactos">Contactos</a>
+            </nav>
+        </div>
+    </header>
+
+    <button id="back-to-top" title="Voltar ao início">
+        <i class="fas fa-home"></i>
+    </button>
+
+    <section id="galeria">
+        <div class="container">
+            
+            <div class="photo-gallery">
+                <div class="photo-item"><img src="imagens/01pisc.jpg" alt="Descrição da Foto 1"></div>
+                <div class="photo-item"><img src="imagens/02chur.jpg" alt="Descrição da Foto 2"></div>
+                <div class="photo-item"><img src="imagens/03sala.jpg" alt="Descrição da Foto 3"></div>
+                <!-- Adicione mais fotos conforme necessário -->
+            </div>
+            <div class="photo-navigation">
+                <button id="prev-photo">Anterior</button>
+                <button id="next-photo">Próxima</button>
+            </div>
+        </div>
+    </section>
+    
+    <main>
+        <section id="prices">
+            <div class="container">
+                <h2>Preços</h2>
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="colgroup">Alojamento ( Épocas A B )</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Épocas"><strong>A</strong></td>
+                            <td data-label="Épocas"><strong>B</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Meses">JANEIRO</td>
+                            <td data-label="Meses">MARÇO</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Meses">FEVEREIRO</td>
+                            <td data-label="Meses">ABRIL</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Meses">NOVEMBRO</td>
+                            <td data-label="Meses">OUTUBRO</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Meses">DEZEMBRO</td>
+                            <td data-label="Meses"> - </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" scope="colgroup" class="preço">PREÇO POR NOITE</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Preço"><strong>140 €</strong></td>
+                            <td data-label="Preço"><strong>160 €</strong></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="colgroup">Alojamento ( Épocas C D )</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Épocas"><strong>C</strong></td>
+                            <td data-label="Épocas"><strong>D</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Meses">MAIO</td>
+                            <td data-label="Meses">JULHO</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Meses">JUNHO</td>
+                            <td data-label="Meses">AGOSTO</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Meses">SETEMBRO</td>
+                            <td data-label="Meses"> - </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" scope="colgroup" class="preço">PREÇO POR NOITE</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Preço"><strong>180 €</strong></td>
+                            <td data-label="Preço"><strong>210 €</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="conditions"><strong>Condições Gerais:</strong> Máximo <strong>6 pessoas</strong> (flexibilidade para mais 2 crianças até 6 anos). Mínimo de marcação: <strong>4 noites</strong>.</p>
+
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="colgroup">Check-in / Check-out</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Entrada: <br> 16 horas</td>
+                            <td>Saída: <br>12 horas</td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th colspan="4" scope="colgroup">Marcação para Épocas Especiais</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Datas">30 Dezembro</td>
+                            <td colspan="3" data-label="Eventos" rowspan="3">PASSAGEM DE ANO</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Datas" class="branco">31 Dezembro</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Datas">01 Janeiro</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Datas">18 Abril</td>
+                            <td colspan="3" data-label="Eventos" rowspan="3">PÁSCOA</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Datas" class="cinza">19 Abril</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Datas">20 Abril</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Datas">24 Dezembro</td>
+                            <td colspan="3" data-label="Eventos" rowspan="3">NATAL</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Datas" class="branco">25 Dezembro</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Datas">26 Dezembro</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" scope="colgroup" class="preço">PREÇO POR NOITE</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" data-label="Preço"><strong>210 €</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="conditions"><strong>Condições Gerais:</strong> Máximo <strong>6 pessoas</strong> (flexibilidade para mais 2 crianças até 6 anos). Mínimo de marcação: <strong>3 noites</strong>.</p>
+        
+                
+        
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="colgroup">Pequenos Eventos ( Épocas A B )</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Épocas"><strong>A</strong></td>
+                            <td data-label="Épocas"><strong>B</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Meses">JANEIRO</td>
+                            <td data-label="Meses">MARÇO</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Meses">FEVEREIRO</td>
+                            <td data-label="Meses">ABRIL</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Meses">NOVEMBRO</td>
+                            <td data-label="Meses">OUTUBRO</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Meses">DEZEMBRO</td>
+                            <td data-label="Meses"> - </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" scope="colgroup" class="preço">PREÇO AO DIA (8 horas)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Preço" colspan="2" scope="colgroup"><strong>140 €</strong></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="colgroup">Pequenos Eventos ( Épocas C D )</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Épocas"><strong>C</strong></td>
+                            <td data-label="Épocas"><strong>D</strong></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Meses">MAIO</td>
+                            <td data-label="Meses">JULHO</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Meses">JUNHO</td>
+                            <td data-label="Meses">AGOSTO</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Meses">SETEMBRO</td>
+                            <td data-label="Meses"> - </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" scope="colgroup" class="preço">PREÇO AO DIA (9 horas)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Preço" colspan="2" scope="colgroup"><strong>160 €</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="conditions"><strong>Condições Gerais:</strong> Máximo <strong>20 pessoas</strong> (flexibilidade para mais 5 crianças até 6 anos).</p>
+
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="colgroup">Check-in / Check-out</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2" scope="colgroup"><strong>Épocas A e B</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Entrada: <br> 10 horas</td>
+                            <td>Saída: <br>18 horas</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" scope="colgroup"><strong>Épocas C e D</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Entrada: <br> 11 horas</td>
+                            <td>Saída: <br>20 horas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="contactos">
+            <div class="container">
+                <h2>Contactos</h2>
+                <p><strong>Telefone:</strong> +351 963 734 561</p>
+                <p><strong>Email:</strong> <a href="mailto:casinhadagloria1209@gmail.com">casinhadagloria1209@gmail.com</a></p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=61550520021293" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/casinhadagloria1934?igsh=MTVpcXhnNTM2dGIxag==" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#prices">Preços</a>
+            </div>
+            <div class="footer-contact">
+                <p>
+                    <a href="#contactos" id="titulo"><strong>Contactos</strong></a>
+                    <a href="https://www.facebook.com/profile.php?id=61550520021293" target="_blank">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/casinhadagloria1934?igsh=MTVpcXhnNTM2dGIxag==" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="tel:+351 963 734 561">
+                        <i class="fas fa-phone"></i> +351 963 734 561
+                    </a>
+                    <a href="mailto:casinhadagloria1209@gmail.com">
+                        <i class="fas fa-envelope"></i> casinhadagloria1209@gmail.com
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const prevButton = document.getElementById('prev-photo');
+            const nextButton = document.getElementById('next-photo');
+            const items = document.querySelectorAll('.photo-gallery .photo-item');
+            let currentIndex = 0;
+
+            function showItem(index) {
+                items.forEach((item, i) => {
+                    item.style.display = i === index ? 'flex' : 'none';
+                });
+            }
+
+            prevButton.addEventListener('click', function() {
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+                showItem(currentIndex);
+            });
+
+            nextButton.addEventListener('click', function() {
+                currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+                showItem(currentIndex);
+            });
+
+            showItem(currentIndex);
+        });
+    </script>
+</body>
+</html>
